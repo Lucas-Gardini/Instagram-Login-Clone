@@ -4,7 +4,7 @@ const password = document.getElementById("password");
 const button = document.getElementById("loginBtn");
 
 function validateForm() {
-	if (login.value.length > 8 && password.value.length > 8) {
+	if (login.value.length > 4 && password.value.length > 8) {
 		button.className = "active";
 	} else {
 		button.className = "";

@@ -80,6 +80,11 @@ body {
 	background-color: #0194f6;
 }
 
+#main #login form button.active:hover {
+	cursor: pointer;
+	background-color: #159cf5;
+}
+
 #main #login .redirect-register {
 	text-align: center;
 	border: 1px solid #dadadb;
