@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preload" href="index.css" as="style" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Instagram</title>
+	</head>
+	<body>
+		<div id="main">
+			<div id="login">
+				<div class="image">
+					<img src="resources/Desktop-Login.jpg" style="width: auto; height: auto" />
+				</div>
+				<div>
+					<form>
+						<img src="resources/Logo.jpg" style="width: auto; height: auto" />
+						<div>
+							<input
+								placeholder="Telefone, nome de usuário ou email"
+								id="user"
+								onchange="validateForm()"
+								type="text"
+							/>
+							<input
+								placeholder="Senha"
+								id="password"
+								onchange="validateForm()"
+								type="password"
+							/>
+							<button id="loginBtn" type="submit" disabled>Entrar</button>
+						</div>
+						<div class="divider">
+							<hr />
+							<span>OU</span>
+							<hr />
+						</div>
+						<div>
+							<button id="facebookBtn">
+								<span>Entrar com o Facebook </span>
+							</button>
+						</div>
+						<div>
+							<button style="background-color: #fff; color: black" id="forgotPassword">
+								<span>Esqueceu a senha?</span>
+							</button>
+						</div>
+					</form>
+					<div class="redirect-register">
+						<p>Não tem uma conta? <a class="redirect" href="#">Cadastre-se</a></p>
+					</div>
+					<div class="apps">
+						<p>Obtenha o aplicativo:</p>
+						<div>
+							<img style="width: 135px; height: 40px" src="resources/appstore.png" />
+							<img style="width: 135px; height: 40px" src="resources/googleplay.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<form id="register"></form>
+		</div>
+		<footer>
+			<div>
+				<a href="#">Sobre</a>
+				<a href="#">Blog</a>
+				<a href="#">Carreiras</a>
+				<a href="#">Ajuda</a>
+				<a href="#">API</a>
+				<a href="#">Privacidade</a>
+				<a href="#">Termos</a>
+				<a href="#">Principais contas</a>
+				<a href="#">Hashtags</a>
+				<a href="#">Localizações</a>
+			</div>
+			<div class="copy">
+				<span>Português (Brasil)</span>
+				<span>© 2021 Instagram do Facebook</span>
+			</div>
+		</footer>
+		<script src="index.js" defer></script>
+	</body>
+</html>
