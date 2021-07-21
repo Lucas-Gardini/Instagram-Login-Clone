@@ -12,7 +12,6 @@ function validateForm() {
 }
 
 function checkResponsivity() {
-	alert(window.innerWidth);
 	if (window.innerWidth < 710) {
 		main.className = "small";
 	} else {
