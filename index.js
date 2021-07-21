@@ -11,12 +11,17 @@ function validateForm() {
 	}
 }
 
+function checkResponsivity() {
+	if (window.innerWidth < 710) {
+		main.className = "small";
+	} else {
+		main.className = "";
+	}
+}
+
 window.onload = () => {
+	checkResponsivity();
 	window.addEventListener("resize", () => {
-		if (window.innerWidth < 710) {
-			main.className = "small";
-		} else {
-			main.className = "";
-		}
+		checkResponsivity();
 	});
 };
